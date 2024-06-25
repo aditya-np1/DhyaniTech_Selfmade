@@ -1,0 +1,25 @@
+<section class="container mx-auto px-4 py-8">
+    <h1>We Design Fountains Digitally</h1>
+    <h2>Let's forget old-fashioned, manually operated fountains...</h2>
+    <h3>Explore our software-driven, cutting-edge fountain solutions.</h3>
+    <div class="flex justify-center mt-8">
+        <button
+            class="learn-more-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow transition duration-300">Learn
+            More <span>&rarr;</span></button>
+    </div>
+</section>
+
+<section class="container mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div *ngFor="let work of works" class="group">
+            <div
+                class="card rounded-lg overflow-hidden shadow-md transition duration-300 transform hover:translate-y-2">
+                <img src="{{ work.imagePath }}" class="w-full h-48 object-cover" alt="{{ work.title }}">
+                <div class="card-body p-4">
+                    <h5 class="card-title text-xl font-bold">{{ work.title }}</h5>
+                    <p class="card-text text-gray-700">{{ work.content }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

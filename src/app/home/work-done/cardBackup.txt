@@ -1,0 +1,23 @@
+<section>
+    <h1> We Design Fountains Digitally</h1>
+    <h2>Let forgot that old generation Fountains with manually handlings..</h2>
+    <h3>observe our latest technology driven Fountains handlings with software</h3>
+</section>
+<div class="LearnMore">
+    <button class="learn-more-btn">Learn More <span>&rarr;</span></button>
+</div>
+<div class="row">
+    <div class="col-sm-4 container" *ngFor="let work of works">
+        <div class="card custom-card">
+            <div class="card-img-top">
+                <img src="{{work.imagePath}}" class="img-fluid" />
+            </div>
+            <div class="card-body">
+                <div class="card-body">
+                    <h5 class="card-title">{{work.title}}</h5>
+                    <p class="card-text">{{work.content}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

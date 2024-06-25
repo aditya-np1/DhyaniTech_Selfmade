@@ -1,0 +1,51 @@
+.card {
+    width: 20rem;
+    border: 8px double #000;
+    border-radius: 13px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top img {
+    border-bottom: 6px double #000;
+    border-radius: 15px 15px 0 0;
+}
+.learn-more-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
+    width: 150px;
+    text-align: right;
+}
+
+.LearnMore {
+    margin: 10px 0;
+    align-items: flex-end;
+}
+
+.learn-more-btn:hover {
+    background-color: #0056b3;
+}
+
+.learn-more-btn:hover span {
+    color: #fff;
+}

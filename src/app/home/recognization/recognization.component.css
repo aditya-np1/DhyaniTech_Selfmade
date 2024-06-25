@@ -1,0 +1,19 @@
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent overlay */
+    color: white;
+    /* Text color */
+    text-align: center;
+    padding: 20px;
+}
+
+.background {
+    background-image: url('../../../assets/img/2-1920x565.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
