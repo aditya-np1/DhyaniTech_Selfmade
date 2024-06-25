@@ -4,3 +4,14 @@
 .nav-item{
     margin-right: 3rem;
 }
+.text-center {
+    text-align: center;
+  }
+  
+  .md:text-left {
+    text-align: left;
+  }
+  
+  .lg:text-left {
+    text-align: left;
+  }
