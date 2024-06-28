@@ -16,6 +16,7 @@ import { MatCardModule } from '@angular/material/card';
 import { ClientReviewsComponent } from './client-reviews/client-reviews.component';
 import { RecognizationComponent } from './recognization/recognization.component';
 import { WorkDoneComponent } from './work-done/work-done.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -27,16 +28,16 @@ import { WorkDoneComponent } from './work-done/work-done.component';
     MainPageComponent,
     ProjectsComponent,
     GalleryComponent,
-    HeaderComponent,
-    FooterComponent,
     ClientReviewsComponent,
     RecognizationComponent,
     WorkDoneComponent,
+
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
-    MatCardModule
+    MatCardModule, 
+    SharedModule
   ]
 })
 export class HomeModule { }

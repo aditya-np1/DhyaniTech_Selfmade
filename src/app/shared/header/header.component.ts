@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   constructor() { }
+  activeSection: string | null = null;
 
+  setActiveSection(section: string) {
+    this.activeSection = section;
+  }
   ngOnInit(): void {
     // document.getElementById('nav-toggle').onclick = function () {
     // docum/ent.getElementById("nav-content").classList.toggle("hidden");
